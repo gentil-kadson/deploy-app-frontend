@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <title>Deploy app</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Hello there! Welcome!</h1>
+        <span>Upload any file below:</span>
+      </div>
+
+      <section>
+        <span id="filename">No file chosen.</span>
+        <form
+          action="http://votify.k-projects.dev.br/images"
+          method="post"
+          id="file-form"
+        >
+          <label id="upload-label" for="1">Choose file</label>
+          <input
+            type="file"
+            name="imageUrl"
+            id="1"
+            onchange="handleUploadedFileName()"
+          />
+          <label for="2">File name:</label>
+          <input type="text" name="title" id="2" />
+          <button type="submit">Send file</button>
+        </form>
+        <a href="/photos.html">
+          <button>View uploaded images</button>
+        </a>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
