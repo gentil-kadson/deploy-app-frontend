@@ -18,5 +18,13 @@
         <button>Go back</button>
       </a>
     </main>
+
+    <script>
+      fetch("http://votify.k-projects.dev.br/api/images").then((response) =>
+        response.json().then((json) => {
+          console.log(json);
+        })
+      );
+    </script>
   </body>
 </html>

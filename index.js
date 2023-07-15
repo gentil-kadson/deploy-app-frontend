@@ -1,5 +1,5 @@
 const fileForm = document.getElementById("file-form");
-const fileUpload = document.querySelector("[name='arquivo']");
+const fileUpload = document.querySelector("[name='imageUrl']");
 const filenameSpan = document.getElementById("filename");
 
 function handleUploadedFileName() {

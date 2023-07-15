@@ -16,19 +16,19 @@
       <section>
         <span id="filename">No file chosen.</span>
         <form
-          action="http://votify.k-projects.dev.br/images"
+          action="http://votify.k-projects.dev.br/api/upload"
           method="post"
           id="file-form"
         >
-          <label id="upload-label" for="1">Choose file</label>
+          <label id="upload-label" for="imageUrl">Choose file</label>
           <input
             type="file"
             name="imageUrl"
-            id="1"
+            id="imageUrl"
             onchange="handleUploadedFileName()"
           />
-          <label for="2">File name:</label>
-          <input type="text" name="title" id="2" />
+          <label for="title">File name:</label>
+          <input type="text" name="title" id="title" />
           <button type="submit">Send file</button>
         </form>
         <a href="/photos.html">
