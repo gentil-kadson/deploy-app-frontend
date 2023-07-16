@@ -17,14 +17,18 @@
         <form
           action="http://localhost:3000/api/send-message"
           method="post"
-          id="file-form"
-          enctype="multipart/form-data"
+          id="sqs-form"
         >
           <label for="message">Message text:</label>
           <input type="text" name="message" id="message" />
-          <label for="stringValue">String value:</label>
-          <input type="text" name="stringValue" id="stringValue" />
-          <button type="submit">Send message</button>
+          <!-- <label for="stringValue">String value:</label>
+          <input type="text" name="stringValue" id="stringValue" /> -->
+          <button
+            type="submit"
+            onclick="alert('Sua mensagem chegará em alguns minutos.')"
+          >
+            Send message
+          </button>
         </form>
         <a href="/index.html">
           <button>Go back</button>
