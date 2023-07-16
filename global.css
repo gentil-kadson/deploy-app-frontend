@@ -85,3 +85,9 @@ main button {
   font-family: "Inter", sans-serif;
   padding: 0.5rem 2.3rem;
 }
+
+#messages span {
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 2rem 3rem;
+}

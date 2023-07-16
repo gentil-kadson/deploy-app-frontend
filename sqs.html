@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Hello there! Welcome!</h1>
+        <span>Type a message below:</span>
+      </div>
+
+      <section>
+        <form
+          action="http://localhost:3000/api/send-message"
+          method="post"
+          id="file-form"
+          enctype="multipart/form-data"
+        >
+          <label for="message">Message text:</label>
+          <input type="text" name="message" id="message" />
+          <label for="stringValue">String value:</label>
+          <input type="text" name="stringValue" id="stringValue" />
+          <button type="submit">Send message</button>
+        </form>
+        <a href="/index.html">
+          <button>Go back</button>
+        </a>
+        <button onclick="getMessages()">Refresh messages</button>
+      </section>
+
+      <section id="messages"></section>
+    </main>
+    <script src="sqs.js"></script>
+  </body>
+</html>
