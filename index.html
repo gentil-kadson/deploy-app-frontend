@@ -16,9 +16,10 @@
       <section>
         <span id="filename">No file chosen.</span>
         <form
-          action="http://votify.k-projects.dev.br/api/upload"
+          action="http://localhost:3000/api/upload"
           method="post"
           id="file-form"
+          enctype="multipart/form-data"
         >
           <label id="upload-label" for="imageUrl">Choose file</label>
           <input
